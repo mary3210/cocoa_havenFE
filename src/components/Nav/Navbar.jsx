@@ -7,6 +7,13 @@ export default function Navbar() {
         <h1>Cocoa Haven</h1>
         <h2>Login</h2>
         </div>
+        <div className='hamburger'>
+          <div>
+          </div>
+          <div>
+          </div>
+          <div></div>
+        </div>
         <div className='nav1'>
         <Link to="/chocolates">
         <p>Chocolates</p>
