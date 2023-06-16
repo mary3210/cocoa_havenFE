@@ -33,13 +33,22 @@ background-color:#61dafb;
 display:flex;
 justify-content: space-between;
 
-}
 
+}
 .nav1 {
+  display: flex;
+  justify-content: space-around;
+}
+.nav1 a {
   background-color: pink;
+  text-decoration: none;
   color: white;
   display:flex;
   justify-content: space-around;
   
 
+}
+
+.nav1:link {
+  text-decoration: none;
 }
