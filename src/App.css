@@ -29,7 +29,7 @@
 }
 
 .Header {
-background-color:#61dafb;
+
 display:flex;
 justify-content: space-between;
 
@@ -38,17 +38,19 @@ justify-content: space-between;
 .nav1 {
   display: flex;
   justify-content: space-around;
+  background-color:black
 }
 .nav1 a {
-  background-color: pink;
+ 
   text-decoration: none;
   color: white;
   display:flex;
   justify-content: space-around;
-  
 
 }
 
-.nav1:link {
-  text-decoration: none;
+.nav1 a:hover {
+  color:brown;
 }
+
+
