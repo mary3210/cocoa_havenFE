@@ -9,13 +9,13 @@ export default function Navbar() {
         </div>
         <div className='nav1'>
         <Link to="/chocolates">
-        <h2>Chocolates</h2>
+        <p>Chocolates</p>
         </Link>
         <Link to="/bestsellers"> 
-        <h2>Best Sellers</h2>
+        <p>Best Sellers</p>
         </Link>
         <Link to="/about">
-        <h2>About</h2>
+        <p>About</p>
         </Link>
 
     </div>
