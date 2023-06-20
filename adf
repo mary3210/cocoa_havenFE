@@ -1,0 +1,65 @@
+[33mcommit 6a087834864bbd94af4e17241740e32f03fee2be[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: mary3210 <maryrodri3210@gmail.com>
+Date:   Fri Jun 16 16:31:41 2023 -0500
+
+    add css styling to hamburger div
+
+[33mcommit 5f1687649eda9d7b5253de7b482e27f2d9b55164[m
+Author: mary3210 <maryrodri3210@gmail.com>
+Date:   Fri Jun 16 16:02:58 2023 -0500
+
+    create new div with classname hamberger
+
+[33mcommit e53177e8068e26f65674b619d573bff397d8d318[m
+Author: mary3210 <maryrodri3210@gmail.com>
+Date:   Thu Jun 15 21:06:29 2023 -0500
+
+    changed h2 to p tags
+
+[33mcommit 55bacda56afd75b5fd4bb414b25f6fd1974a1149[m
+Author: mary3210 <maryrodri3210@gmail.com>
+Date:   Thu Jun 15 20:59:27 2023 -0500
+
+    Add Hover
+
+[33mcommit d91597619439c38fbc7c9fc2a85198cccfe4b8b9[m
+Author: mary3210 <maryrodri3210@gmail.com>
+Date:   Thu Jun 15 20:54:46 2023 -0500
+
+    Removed text decoration in nav1:a
+
+[33mcommit 343b968fee77913d83b749fd9b72a7af0d18a290[m
+Author: mary3210 <maryrodri3210@gmail.com>
+Date:   Thu Jun 15 20:43:14 2023 -0500
+
+    Added Links to each Nav section
+
+[33mcommit 0d8c425264405c01e4103aba19a042d9ebb6c5a9[m
+Author: mary3210 <maryrodri3210@gmail.com>
+Date:   Sat May 27 10:12:16 2023 -0500
+
+    added additional styling to spacing in headers
+
+[33mcommit 40ad1892c319b8eccaa282ac0a850299e8e81402[m
+Author: mary3210 <maryrodri3210@gmail.com>
+Date:   Sat May 27 10:07:47 2023 -0500
+
+    added background colors to different divs in Navbar.jsx
+
+[33mcommit fcf22e3be6a25af5b24734c97aef84b9f7d147be[m
+Author: mary3210 <maryrodri3210@gmail.com>
+Date:   Sat May 27 10:03:27 2023 -0500
+
+    created navbar headers
+
+[33mcommit 757c4d312792fa23f9b1fd5f546b87b1ae2a60aa[m
+Author: mary3210 <maryrodri3210@gmail.com>
+Date:   Sat May 27 09:43:38 2023 -0500
+
+    deleted files
+
+[33mcommit 39f91282113929c44f033ffc34d8a0d3b8d9ee85[m
+Author: mary3210 <maryrodri3210@gmail.com>
+Date:   Sat May 27 08:53:42 2023 -0500
+
+    Initialize project using Create React App
