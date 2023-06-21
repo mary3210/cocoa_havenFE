@@ -53,9 +53,24 @@ justify-content: space-between;
   color:brown;
 }
 
+
 .hamburger div{
   width: 35px;
   height: 5px;
   background-color: black;
   margin: 6px 0;
+  transition: 0.3s;
+}
+
+ .change .line1{
+  transform: translate(0, 11px) rotate(-45deg);
+
+}
+
+.change .line2  {
+  opacity: 0% 
+}
+
+.change .line3 {
+  transform: translate(0, -11px) rotate(45deg);
 }
