@@ -38,16 +38,23 @@ justify-content: space-between;
 .nav1 {
   display: flex;
   justify-content: space-around;
-  background-color:black;
+  background-color: none;
   transform: translate(-150px);
   transition: transform 0.5s ease-in-out;
+  text-align: center;
+  flex-direction:column;
+  margin-left: -40px;
+  padding-left: 50px;
+  padding-top: 120px;
+
 }
 .nav1 a {
- 
+  
   text-decoration: none;
   
   display:flex;
-  justify-content: space-around;
+  flex-direction:column;
+  text-align: center;
   
   
 
@@ -83,3 +90,7 @@ justify-content: space-between;
 }
 
 
+#menu {
+  background-color:rgba(76, 175, 80, 0.001);
+  
+}
