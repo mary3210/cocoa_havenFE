@@ -16,8 +16,11 @@ export default function Navbar() {
         <div className="line3"></div>
       
       <div className="nav1" id="menu">
-        <Link to="/chocolates">
-          <p>Chocolates</p>
+        <Link to="/milkchocolates">
+          <p> Milk Chocolates</p>
+        </Link>
+        <Link to="/darkchocolates">
+          <p> Dark Chocolates</p>
         </Link>
         <Link to="/bestsellers">
           <p>Best Sellers</p>
