@@ -14,7 +14,7 @@ export default function Navbar() {
         <div className="line1"></div>
         <div className="line2"></div>
         <div className="line3"></div>
-      </div>
+      
       <div className="nav1">
         <Link to="/chocolates">
           <p>Chocolates</p>
@@ -25,6 +25,7 @@ export default function Navbar() {
         <Link to="/about">
           <p>About</p>
         </Link>
+        </div>
       </div>
     </nav>
   );
