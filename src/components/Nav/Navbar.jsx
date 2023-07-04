@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav className="nav">
       <div className="Header">
         <h1>Cocoa Haven</h1>
-        <h2>Login</h2>
+        
       </div>
       <div className="hamburger" onClick={toggleClass}>
         <div className="line1"></div>
