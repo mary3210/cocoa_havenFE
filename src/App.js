@@ -6,20 +6,12 @@ import MilkChocolates from './components/Nav/MilkChocolates/MilkChocolates';
 import {Routes, Route} from "react-router-dom"
 import Login from './components/Login';
 import LoginForm from './components/LoginForm';
+import useToken from './components/useToken'
 import './App.css';
 
-function setToken(userToken){
- sessionStorage.setItem('token', JSON.stringify(userToken));
-}
 
-function getToken() {
-  const tokenString = sessionStorage.getItem('token');
-  const userToken = JSON.parse(tokenString);
-  return userToken?.token
-
-}
 function App() {
-const token = getToken();
+    const {token, setToken } = useToken();
 
 if(!token) {
   return <LoginForm setToken={setToken}/>
