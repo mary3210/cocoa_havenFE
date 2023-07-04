@@ -31,14 +31,14 @@ export default function LoginForm({ setToken }) {
       <form onSubmit={handleSubmit}>
         <label>
           <p>Username</p>
-          <input type="text" onchange={ e => setUserName(e.target.value)}/>
+          <input type="text" onChange={ e => setUserName(e.target.value)}/>
         </label>
         <label>
           <p>Password</p>
           <input type="password" onChange={e => setPassword(e.target.value)}/>
         </label>
         <div>
-          <button type="submit">submit</button>
+          <button type="submit">Submit</button>
         </div>
       </form>
     </div>
