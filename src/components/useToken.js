@@ -24,11 +24,24 @@ export default function useToken(){
         localStorage.setItem('token', token_id);
         setToken(token_id);
     };
+
+    const removeToken = () => {
+        localStorage.removeItem('token');
+        setToken('');
+    }
      
     return {
-        setToken:saveToken,
+        setToken: saveToken,
+        removeToken: removeToken,
         token
     }
 }
 
+/* 
+{
+    key: value,
+    key1: value1
+}
 
+
+*/

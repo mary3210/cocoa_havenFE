@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,81 +17,105 @@
   color: #61dafb;
 }
 
-.Header {
-
-display:flex;
-justify-content: space-between;
-align-items: center;
-
-
+.Header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
+
+.Header1 nav {
+  width: 150px;
+}
+
+#Header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
 .nav1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   background-color: none;
   transform: translate(-150px);
   transition: transform 0.5s ease-in-out;
   text-align: center;
-  flex-direction:column;
-  margin-left: -40px;
-  padding-left: 50px;
-  padding-top: 120px;
-
+  flex-direction: column;
 }
+
+.nav1 a:first-child {
+  margin-top: 75px;
+}
+
 .nav1 a {
-  
   text-decoration: none;
-  
-  display:flex;
-  flex-direction:column;
+  color: #000;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  
-  
-
+  padding: 10px;
 }
 
-.nav1 p:hover {
-  color:brown;
+.nav1 a:hover {
+  color: brown;
 }
 
-.hamburger.change .nav1 {
+.change .nav1 {
   transform: translateX(0);
-  
 }
 
 .hamburger {
   padding-left: 20px;
+  position: relative;
+  z-index: 1;
+  width: 35px;
+  cursor: pointer;
 }
-.hamburger div{
+
+.hamburger .line1,
+.hamburger .line2,
+.hamburger .line3 {
   width: 35px;
   height: 5px;
   background-color: black;
   margin: 6px 0;
   transition: 0.3s;
-  
 }
 
- .change .line1{
+.change .line1 {
   transform: translate(0, 11px) rotate(-45deg);
-
 }
 
-.change .line2  {
-  opacity: 0% 
+.change .line2 {
+  opacity: 0%;
 }
 
 .change .line3 {
   transform: translate(0, -11px) rotate(45deg);
 }
 
-
 #menu {
-  background-color:rgba(76, 175, 80, 0.001);
-  
+  background-color: #8a6145;
+  position: absolute;
+  height: 100vh;
+  top: 0px;
 }
 
 .login-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 150px;
+}
+
+@media screen and (max-width: 495px) {
+  .Header1 {
+    flex-flow: wrap;
+    padding-top: 20px;
+    min-width: 300px;
+  }
+  #Header {
+    order: 1;
+    margin: auto;
+  }
 }

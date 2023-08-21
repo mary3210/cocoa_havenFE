@@ -9,9 +9,10 @@ import LoginForm from "./components/LoginForm";
 import useToken from "./components/useToken";
 import "./App.css";
 import LoginPage from "./components/LoginPage";
-
+import Logout from "./components/Logout";
 function App() {
-  const { token, setToken } = useToken();
+  const [loginFlag, setLoginFlag] = useState(false)
+  const { token, setToken, removeToken } = useToken();
   const access_token_url = new URLSearchParams(window.location.hash).get(
     "#access_token"
   );
@@ -38,6 +39,7 @@ function App() {
       xhr.send();
       window.history.pushState('', '', 'http://lvh.me:3000/')
       //returns the window to the base url without revealing userinfo in the url bar
+
     }
   }, [token]);
 
@@ -45,9 +47,17 @@ function App() {
 
  
   return (
+    
     <div className="App">
-      {!token && <Login/>}
-      <Navbar />
+      <div className="Header1">
+        <Navbar />
+        <div id= "Header">
+          <h1>Cocoa Haven</h1>
+        </div>
+        <div className="login-wrapper">
+          {!token ? <LoginForm setToken={setToken}/> : <Logout removeToken={removeToken}/> }
+        </div>
+      </div>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/milkchocolates" element={<MilkChocolates />} />
