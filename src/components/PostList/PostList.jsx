@@ -8,7 +8,7 @@ const PostList = () => {
   const getPosts = async () => {
     try {
         console.log(BASE_URL)
-      const response = await fetch(BASE_URL + "/posts");
+      const response = await fetch(BASE_URL + "/posts/allItems");
       const allPosts = await response.json();
       console.log(allPosts)
       setPosts(allPosts);
@@ -36,7 +36,6 @@ const PostList = () => {
                 <div className="ptags">
                   <p>{post.name}</p>
                 </div>
-                
               </Link>
             </div>
           ))}

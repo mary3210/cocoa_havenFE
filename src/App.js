@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Home from "./components/Nav/home/home";
 import Navbar from "./components/Nav/Navbar";
 import DarkChocolates from "./components/DarkChocolates/DarkChocolates";
+import MilkChocolateList from "./components/Nav/MilkChocolates/MilkChocolates";
 import MilkChocolates from "./components/Nav/MilkChocolates/MilkChocolates";
 import { Routes, Route, Link } from "react-router-dom";
 import Login from "./components/Login";
@@ -10,6 +11,7 @@ import useToken from "./components/useToken";
 import "./App.css";
 import LoginPage from "./components/LoginPage";
 import Logout from "./components/Logout";
+import BestSeller from "./components/BestSeller/BestSeller";
 function App() {
   const [loginFlag, setLoginFlag] = useState(false)
   const { token, setToken, removeToken } = useToken();
@@ -60,7 +62,8 @@ function App() {
       </div>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/milkchocolates" element={<MilkChocolates />} />
+        <Route exact path="/bestsellers/:id" element={<BestSeller />} />
+        <Route exact path="/milkchocolates" element={<MilkChocolateList />} />
         <Route exact path="/darkchocolates" element={<DarkChocolates />} />
         <Route exact path="/login" element={<LoginForm setToken={setToken}/>}/>
       </Routes>
