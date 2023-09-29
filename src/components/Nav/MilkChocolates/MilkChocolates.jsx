@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
   const MilkChocolateList = () => {
     const [posts, setPosts] = useState();
@@ -36,14 +37,14 @@ import { useState, useEffect } from 'react';
         <ul>
           { posts && posts.map((post, index) => (
               <div className="MilkChocolatePosts" key={index}>
-                {/* <Link key={posts._id} to={`${posts.id}`}> */}
+                <Link key={post._id} to={`/milkchocolates/${post._id}`}>
                   <div className="images">
                     <img alt={post?.tags} src={post?.image} />
                   </div>
                   <div className="ptags">
                     <p>{post?.name}</p>
                   </div>
-                {/* </Link> */}
+                </Link>
               </div>
             ))}
         </ul>
