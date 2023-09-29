@@ -35,7 +35,7 @@ const DarkChocolateList = () => {
         {posts &&
           posts.map((post, index) => (
             <div className="DarkChocolatePosts" key={index}>
-              <Link key={post._id} to={`${post.id}`}>
+              <Link key={post._id} to={`/darkchocolates/${post._id}`}>
               <div className="images">
                 <img alt={post?.tags} src={post?.image} />
               </div>
