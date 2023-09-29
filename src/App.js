@@ -59,6 +59,7 @@ function App() {
       </div>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/home/:id" element={<ShowChocolate />} />
         <Route exact path="/bestsellers/:id" element={<BestSeller />} />
         <Route exact path="/milkchocolates" element={<MilkChocolateList />} />
         <Route exact path="/milkchocolates/:id" element={<ShowChocolate />} />

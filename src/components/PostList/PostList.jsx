@@ -29,7 +29,7 @@ const PostList = () => {
        
             <div className="HomePosts" key={index}>
 
-              <Link key={post._id} to={`/post/${post._id}`}>
+              <Link key={post._id} to={`/home/${post._id}`}>
                 <div className="images">
                   <img alt={post.tags} src={post.image} />
                 </div>
