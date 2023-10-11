@@ -10,6 +10,7 @@ import "./App.css";
 import Logout from "./components/Logout";
 import BestSeller from "./components/BestSeller/BestSeller";
 import ShowChocolate from "./components/chocolateDetails/ChocolateDetails";
+import ShoppingCart from "./components/ShoppingCart";
 function App() {
   const [loginFlag, setLoginFlag] = useState(false);
   const { token, setToken, removeToken } = useToken();
@@ -48,6 +49,9 @@ function App() {
         <Navbar />
         <div id="Header">
           <h1>Cocoa Haven</h1>
+        </div>
+        <div>
+        <ShoppingCart/>
         </div>
         <div className="login-wrapper">
           {!token ? (
