@@ -37,7 +37,9 @@ const ShowChocolate = (props) => {
             <h1>{post?.name}</h1>
             <p>{post?.price}</p>
             <p>{post?.detail}</p>
+            <button>Add to Cart</button>
           </div>
+          
         ))}
     </div>
   );

@@ -37,6 +37,7 @@ const PostList = () => {
                   <p>{post.name}</p>
                 </div>
               </Link>
+              <button>Add To Cart</button>
             </div>
           ))}
       </ul>

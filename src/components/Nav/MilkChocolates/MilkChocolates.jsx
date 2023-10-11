@@ -44,7 +44,9 @@ import { Link } from 'react-router-dom';
                   <div className="ptags">
                     <p>{post?.name}</p>
                   </div>
+                  
                 </Link>
+                <button>Add to cart</button>
               </div>
             ))}
         </ul>

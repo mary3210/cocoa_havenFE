@@ -35,6 +35,7 @@ const BestSellerLists = () => {
                   <p>{post?.name}</p>
                 </div>
               {/* </Link> */}
+              <button>Add to Cart</button>
             </div>
           ))}
       </ul>
