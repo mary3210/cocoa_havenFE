@@ -11,6 +11,8 @@ import Logout from "./components/Logout";
 import BestSeller from "./components/BestSeller/BestSeller";
 import ShowChocolate from "./components/chocolateDetails/ChocolateDetails";
 import ShoppingCart from "./components/ShoppingCart";
+import ShoppingCartForm from "./components/ShoppingCartForm"
+
 function App() {
   const [loginFlag, setLoginFlag] = useState(false);
   const { token, setToken, removeToken } = useToken();
@@ -69,6 +71,8 @@ function App() {
         <Route exact path="/milkchocolates/:id" element={<ShowChocolate />} />
         <Route exact path="/darkchocolates" element={<DarkChocolates />} />
         <Route exact path="/darkchocolates/:id" element={<ShowChocolate />} />
+        <Route exact path="/usercart" element={<ShoppingCartForm/>} />
+        
         <Route
           exact
           path="/login"
